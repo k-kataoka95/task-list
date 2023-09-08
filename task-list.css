@@ -1,0 +1,75 @@
+/*全体*/
+
+/*入力要素をまとめて初期化*/
+input, select, textarea, button {
+  padding: 3px;
+  font-family: inherit;
+  border: 2px solid gray;
+  font-size: 100%;
+}
+
+button {
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+h1, p {
+  text-align: center;
+}
+
+body {
+  width: 800px;
+  margin: 0 auto;
+  background-color: lightblue;
+  font-family: sans-serif;
+}
+
+
+/*inputarea*/
+
+.inputarea {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.inputarea .row {
+  margin: 10px 0;
+}
+
+.inputarea button {
+  padding: 3px 15px;
+  background-color: blue;
+  font-size: 1.1em;
+}
+
+.inputarea #tasktitle, #taskdetail {
+  width: 500px;
+}
+
+
+/*tasklistarea*/
+
+.tasklistarea table {
+  width: 100%;
+}
+
+.tasklistarea thead {
+  color: white;
+  background-color: green;
+}
+
+.tasklistarea button {
+  background-color: black;
+  display: block;
+  margin: 0 auto;
+}
+
+.tasklistarea td {
+  background-color: white;
+}

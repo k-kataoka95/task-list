@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="task-list.css">
+  
+  <title>やったことリスト</title>
+</head>
+<body>
+<h1>期末面談用やったことリスト</h1>
+<p>実施月、進捗、タイトル、タスク概要を入力してください。</p>
+<div class="inputarea">
+  <div class="row">
+  <input type="month" id="taskmonth">
+  <select id="taskstatus">
+    <option value="済">済</option>
+    <option value="進行中">進行中</option>
+    <option value="未着手">未着手</option>
+  </select>
+  <button id="submit">登録</button>
+  </div>
+  <div class="row">
+  <input type="text" id="tasktitle" placeholder="タイトル">
+  </div>
+  <div class="row">
+  <textarea rows="6" id="taskdetail" placeholder="タスクの概要"></textarea>
+  </div>
+</div>
+
+<div class="tasklistarea">
+  <table>
+    <thead>
+      <tr>
+        <th>実施月</th>
+        <th>進捗</th>
+        <th>タイトル</th>
+        <th>タスク概要</th>
+        <th>削除</th>
+      </tr>
+    </thead>
+    <tbody id="tasklist">
+      <!--
+      <tr>
+        <td>2021-07</td>
+        <td>済</td>
+        <td>A社経営統合プロジェクト</td>
+        <td>経営統合に伴う業務プロセス統合プロジェクト。<br>
+          プロジェクトリーダー（メンバー４人）として担当。<br>
+          ＱＤＣ目標いずれも達成。ＣＳ評価で５をいただいた。</td>
+        <td><button>削除</button></td>
+      </tr>
+    -->
+    </tbody>
+  </table>
+</div>
+<script src="task-list.js"></script>
+</body>
+</html>
